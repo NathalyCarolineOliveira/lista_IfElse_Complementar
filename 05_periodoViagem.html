@@ -11,9 +11,21 @@
     */
 
     // Entrada
-    
+    const dintViagem = Number(prompt(`Informe qual a distância da viagem, em quilômetros`).trim().replace(",","."));
+    const quilom = Number(prompt(`Quantos quilômetros pretende viajar por dia?`).trim().replace(",","."));
     // Processamento
-
+if( dintViagem <= 3){
+    alert("Qualquer Período")
+}
+else if( dintViagem > 3 && dintViagem <= 10){
+    alert("Férias de Julho")
+}
+else if( dintViagem > 10 && dintViagem <= 20){
+    alert("Férias de Verão")
+}
+else if( dintViagem > 20){
+    alert("Deverá Trabalhar Remoto")
+}
     // Saída
 
 </script>

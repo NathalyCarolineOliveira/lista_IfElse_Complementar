@@ -15,8 +15,25 @@
     */
 
     // Entrada
-    
+    const salario = Number(prompt(`Informe o valor do seu salário:`).trim().replace(",","."));
+
     // Processamento
+if( salario <= 2000){
+    alert(`O salário final será de: R$${((salario * 0.15) + salario).toFixed(2).replace(".",",")} com reajuste de 15%`)
+}
+else if( salario > 2000 && salario < 4000){
+    alert(`O salário final será de: R$${((salario * 0.10) + salario).toFixed(2).replace(".",",")}com reajuste de 10%`)
+}
+else if( salario > 4000 && salario < 7000){
+    alert(`O salário final será de: R$${((salario * 0.075) + salario).toFixed(2).replace(".",",")}com reajuste de 7,5%`)
+}
+else if( salario > 7000){
+    alert(`O salário final será de: R$${((salario * 0.05) + salario).toFixed(2).replace(".",",")}com reajuste de 5%`)
+}
+else{
+    alert(`Valor inválido!`)
+}
+
 
     // Saída
 
